@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/ActivityStyle"
+    tools:context=".InputWaistActivity">
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/RegistrationLabels"
+        android:gravity="center"
+        android:text="@string/waistGreeting"
+        android:layout_above="@id/waistField"/>
+
+    <EditText
+        android:id="@+id/waistField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="numberDecimal"
+        style="@style/RegistrationFields"
+        android:hint="@string/waistHint"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:importantForAutofill="no" />
+
+    <ImageButton
+        android:id="@+id/applyWaist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        app:srcCompat="@mipmap/button_next_white_foreground"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="36dp"/>
+
+    <TextView
+        android:id="@+id/dateFieldWaist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/RegistrationFields"
+        android:layout_below="@id/waistField"
+        android:layout_centerHorizontal="true"
+        android:text="DATE" />
+</RelativeLayout>

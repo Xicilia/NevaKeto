@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/ActivityStyle"
+    tools:context=".EatConfigureActivity">
+
+    <EditText
+        android:id="@+id/eatDescriptionField"
+        style="@style/commonLabels"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/eatDescriptionLabel"
+        android:ems="10"
+        android:gravity="center"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:text=""
+        tools:ignore="LabelFor" />
+
+    <TextView
+        android:id="@+id/eatDescriptionLabel"
+        style="@style/commonLabels"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/eatNameEdit"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/eatDescription" />
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/commonLabels"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/EatName"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/eatNameEdit"
+        style="@style/commonLabels"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:ems="10"
+        android:gravity="center"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:text=""
+        tools:ignore="LabelFor" />
+
+    <TextView
+        android:id="@+id/eatAtLabel"
+        style="@style/commonLabels"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/isEnabledSwitch"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/eatAt" />
+
+    <Button
+        android:id="@+id/applyEatConfigureButton"
+        style="@style/GreetingTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="@string/Apply" />
+
+    <Button
+        android:id="@+id/deleteEatButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:layout_alignParentEnd="true"
+        android:backgroundTint="@color/cerise"
+        style="@style/commonLabelsSmall"
+        android:text="@string/delete" />
+
+    <TextView
+        android:id="@+id/eatTimeLabel"
+        style="@style/commonLabels"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/eatAtLabel"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="eat time"
+        tools:ignore="HardcodedText" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/isEnabledSwitch"
+        style="@style/commonLabels"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/eatDescriptionField"
+        android:layout_marginTop="20dp"
+        android:text="@string/enabled" />
+
+    <TextView
+        android:id="@+id/textView21"
+        style="@style/commonLabelsSmall"
+        android:textSize="15sp"
+        android:layout_below="@id/eatTimeLabel"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="(нажмите для редактирования)" />
+
+</RelativeLayout>

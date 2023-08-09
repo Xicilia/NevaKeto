@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/ActivityStyle"
+    tools:context=".HeightRegistrationActivity">
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/RegistrationLabels"
+        android:layout_centerHorizontal="true"
+        android:text="@string/HeightRegistrationGreetings"
+        android:layout_above="@id/HeightField"/>
+
+    <EditText
+        android:id="@+id/HeightField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/RegistrationFields"
+        android:gravity="center"
+        android:ems="10"
+        android:inputType="numberSigned"
+        android:hint="@string/HeightRegistrationLabel"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:importantForAutofill="no" />
+
+    <ImageButton
+        android:id="@+id/RegisterHeightButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/button_next_white_foreground"
+        android:background="@color/transparent"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="63dp"/>
+</RelativeLayout>

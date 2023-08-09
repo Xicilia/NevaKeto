@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WeightActivity"
+    style="@style/ActivityStyle">
+
+    <ImageButton
+        android:id="@+id/weightIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/button10"
+        app:srcCompat="@mipmap/weight_another_white_foreground" />
+
+    <TextView
+        android:id="@+id/currentWeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/weightIcon"
+        android:textSize="23sp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:fontFamily="@font/pragmatica_common"
+        android:text="@string/currentValue" />
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addButton"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/cerise"
+        android:fontFamily="@font/pragmatica_common"
+        android:textSize="13sp"
+        android:text="@string/delete" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/currentWeight"
+        android:background="@color/transparent"
+        android:clickable="false"/>
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:layout_alignParentTop="true"
+        android:clickable="false"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="10dp"
+        android:layout_below="@id/deleteButton">
+
+        <LinearLayout
+            android:id="@+id/mainLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button5"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/cerise"
+        android:fontFamily="@font/pragmatica_common"
+        android:text="@string/SetWeightButton"
+        android:textSize="13sp" />
+</RelativeLayout>

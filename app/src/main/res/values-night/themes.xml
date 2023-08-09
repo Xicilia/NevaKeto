@@ -1,0 +1,24 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.NevaKeto" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/LightGreen</item>
+        <item name="colorPrimaryVariant">@color/LighterGreen</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/cerise</item>
+        <item name="colorSecondaryVariant">@color/cerisedark</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/salemdark</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="ActivityStyle">
+        <item name="android:background">@color/salem</item>
+        <item name="android:statusBarColor">@color/salem</item>
+        <item name="colorPrimaryDark">@color/salemdark</item>
+        <item name="colorPrimary">@color/salem</item>
+        <item name="android:navigationBarColor">@color/salemdark</item>
+    </style>
+</resources>

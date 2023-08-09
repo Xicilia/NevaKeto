@@ -1,0 +1,114 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/ActivityStyle"
+    tools:context=".AboutMeActivity">
+
+    <TextView
+        android:id="@+id/exerciseTime"
+        style="@style/commonLabels"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView5"
+        android:text="@string/EmptyTime"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        style="@style/commonLabels"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/exerciseEnabler"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/ExerciseAt" />
+
+    <TextView
+        android:id="@+id/textView4"
+        style="@style/commonLabels"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/ExerciseName" />
+
+    <TextView
+        android:id="@+id/textView3"
+        style="@style/commonLabels"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/exerciseName"
+        android:gravity="center"
+        android:text="@string/ExerciseDescription" />
+
+    <EditText
+        android:id="@+id/exerciseName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/commonLabels"
+        android:gravity="center"
+        android:layout_below="@id/textView4"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/exerciseDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView3"
+        android:ems="10"
+        android:textColor="@color/white"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/deleteExercise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        style="@style/commonLabelsSmall"
+        android:backgroundTint="@color/cerise"
+        android:text="@string/delete" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/exerciseEnabler"
+        style="@style/commonLabels"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/exerciseDescription"
+        android:layout_marginTop="20dp"
+        android:text="@string/isEnabled2" />
+
+    <Button
+        android:id="@+id/controlExercise"
+        style="@style/commonLabelsSmall"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView30"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="@color/cerise"
+        android:text="@string/Control" />
+
+    <TextView
+        android:id="@+id/textView30"
+        style="@style/commonLabelsSmall"
+        android:textSize="15sp"
+        android:layout_below="@id/exerciseTime"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="(нажмите для редактирования)" />
+
+</RelativeLayout>

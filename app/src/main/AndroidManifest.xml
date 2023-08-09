@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.nevaketo">
+
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon_main"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/icon_main_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.NevaKeto">
+        <activity
+            android:name=".WeightActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".WaistActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".MedicineConfigureActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".MedicineActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ExerciseControlActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ConfigureExerciseActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ExercisesActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity android:name=".FullScreenImage" />
+        <activity android:name=".SleepActivity" />
+        <activity android:name=".InputHistoryActivity" />
+        <activity android:name=".InputsActivity" />
+        <activity android:name=".InputWaistActivity" />
+        <activity android:name=".EatConfigureActivity" />
+        <activity android:name=".EatActivity" />
+        <activity android:name=".NotificationActivity" />
+        <activity android:name=".CreateWaterNotificationActivity" />
+        <activity android:name=".WeightHistory" />
+        <activity android:name=".AboutMeActivity" />
+        <activity android:name=".WeightRegistrationActivity" />
+        <activity android:name=".HeightRegistrationActivity" />
+        <activity android:name=".GreetingActivity" />
+        <activity android:name=".NameRegistrationActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".WaterNotificationReceiver"
+            android:enabled="true"
+            android:exported="true" />
+        <receiver
+            android:name=".EatBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true" />
+        <receiver
+            android:name=".SleepBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true" />
+        <receiver
+            android:name=".ExerciseBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true" />
+        <receiver
+            android:name=".MedicineBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true" />
+    </application>
+
+</manifest>

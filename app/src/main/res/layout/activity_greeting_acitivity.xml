@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/ActivityStyle"
+    tools:context=".GreetingActivity">
+
+
+
+    <Button
+        android:id="@+id/toNotificationsButton"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/button3"
+        android:textSize="17sp"
+        android:textAlignment="viewStart"
+        android:background="@color/transparent"
+        android:text="@string/notifications"
+        android:fontFamily="@font/pragmatica_common"
+        app:icon="@mipmap/notification_white_foreground" />
+
+    <Button
+        android:id="@+id/AboutMeButton"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/toNotificationsButton"
+        android:layout_alignStart="@id/toNotificationsButton"
+        android:layout_alignEnd="@id/toNotificationsButton"
+        android:background="@color/transparent"
+        android:fontFamily="@font/pragmatica_common"
+        android:textAlignment="viewStart"
+        android:text="@string/AboutMeButton"
+        android:textSize="17sp"
+        app:icon="@mipmap/profile_white_foreground" />
+
+    <Button
+        android:id="@+id/waistButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@color/transparent"
+        android:layout_alignStart="@id/toNotificationsButton"
+        android:layout_alignEnd="@id/toNotificationsButton"
+        android:layout_above="@id/AboutMeButton"
+        android:fontFamily="@font/pragmatica_common"
+        android:textAlignment="viewStart"
+        android:textSize="17sp"
+        android:text="@string/LastWaistLabel"
+        app:icon="@mipmap/waist_white_foreground" />
+
+    <Button
+        android:id="@+id/weightButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/waistButton"
+        android:layout_alignStart="@id/toNotificationsButton"
+        android:layout_alignEnd="@id/toNotificationsButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="0dp"
+        android:background="@color/transparent"
+        android:fontFamily="@font/pragmatica_common"
+        android:text="@string/LastWeightLabel"
+        android:textAlignment="viewStart"
+        android:textSize="17sp"
+        app:icon="@mipmap/weight_another_white_foreground" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/transparent"
+        android:clickable="false"
+        android:text="" />
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/transparent"
+        android:clickable="false"
+        android:text="" />
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:layout_below="@id/button4"
+        android:clickable="false"
+        android:text="" />
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:clickable="false"
+        android:layout_above="@id/button2"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/GreetingLabel"
+        style="@style/RegistrationLabels"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button6"
+        android:gravity="center"
+        android:text="@string/greetingText" />
+
+    <Button
+        android:id="@+id/ClearButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ClearButton" />
+</RelativeLayout>

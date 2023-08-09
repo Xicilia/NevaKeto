@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/DarkestGreen"
+    android:layout_height="match_parent"
+    tools:context=".InputsActivity">
+
+    <Button
+        android:id="@+id/SetWeightButton"
+        style="@style/GreetingTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="111dp"
+        android:text="@string/SetWeightButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/toWaistInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        style="@style/GreetingTextStyle"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="159dp"
+        android:text="@string/toWaist"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ToWeightHistory" />
+
+    <Button
+        android:id="@+id/ToWeightHistory"
+        style="@style/GreetingTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginLeft="88dp"
+        android:layout_marginTop="11dp"
+        android:text="@string/ToWeightHistory"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SetWeightButton" />
+
+    <Button
+        android:id="@+id/ToWaistHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="112dp"
+        android:layout_marginLeft="112dp"
+        android:layout_marginTop="13dp"
+        android:text="@string/toWaistHistory"
+        style="@style/GreetingTextStyle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toWaistInput" />
+</androidx.constraintlayout.widget.ConstraintLayout>

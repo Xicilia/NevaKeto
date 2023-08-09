@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/ActivityStyle"
+    tools:context=".MedicineConfigureActivity">
+
+    <EditText
+        android:id="@+id/medicineDesc"
+        style="@style/commonLabels"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/medicineDescription"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/medicineDescription"
+        style="@style/commonLabels"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/medicineName"
+        android:text="@string/medicineDescription" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="@string/medicineName"
+        style="@style/commonLabels" />
+
+    <EditText
+        android:id="@+id/medicineName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView13"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        style="@style/commonLabels" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/controlLayout">
+
+        <LinearLayout
+            android:id="@+id/layoutMedicineTimes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" />
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/controlLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/medicineEnabled">
+
+        <Button
+            android:id="@+id/medicineAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/pragmatica_common"
+            android:backgroundTint="@color/cerise"
+            android:text="@string/Add" />
+
+        <Button
+            android:id="@+id/medicineDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/pragmatica_common"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/cerise"
+            android:text="@string/delete" />
+
+        <Button
+            android:id="@+id/medicineChange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/pragmatica_common"
+            android:backgroundTint="@color/cerise"
+            android:text="@string/Change" />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/medicineEnabled"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/medicineDesc"
+        android:layout_marginTop="5dp"
+        android:text="@string/isEnabled2"
+        style="@style/commonLabels" />
+
+    <Button
+        android:id="@+id/medicineFullDelete"
+        android:backgroundTint="@color/cerise"
+        android:fontFamily="@font/pragmatica_common"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="10dp"
+        android:text="@string/medicineDelete" />
+</RelativeLayout>

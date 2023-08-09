@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/ActivityStyle"
+    tools:context=".NameRegistrationActivity">
+
+    <TextView
+        android:id="@+id/WeightRegistartionLabelMain"
+        style="@style/RegistrationLabels"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/WeightField"/>
+
+    <EditText
+        android:id="@+id/WeightField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        style="@style/RegistrationFields"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:hint="@string/WeightRegistrationLabel"
+        android:importantForAutofill="no" />
+
+    <ImageButton
+        android:id="@+id/registerWeightButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="36dp"
+        android:background="@color/transparent"
+        app:srcCompat="@mipmap/button_ok_white_foreground" />
+
+    <TextView
+        android:id="@+id/dateField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/RegistrationFields"
+        android:layout_below="@id/WeightField"
+        android:layout_centerHorizontal="true"
+        android:text="DATE" />
+</RelativeLayout>

@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/ActivityStyle"
+    tools:context=".AboutMeActivity">
+
+    <Button
+        android:id="@+id/waterNotificationButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/cerise"
+        style="@style/commonLabelsSmall"
+        android:text="@string/drinkWater" />
+
+    <Button
+        android:id="@+id/clearWaterNotificationButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/commonLabelsSmall"
+        android:layout_below="@id/waterNotificationButton"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/cerise"
+        android:textSize="15sp"
+        android:text="@string/ClearWaterNotif" />
+
+    <Button
+        android:id="@+id/eatButton"
+        style="@style/commonLabelsSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/clearWaterNotificationButton"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/cerise"
+        android:text="@string/eat" />
+
+    <Button
+        android:id="@+id/toSleepNotification"
+        style="@style/commonLabelsSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/medicineButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/cerise"
+        android:text="@string/sleep" />
+
+    <TextView
+        android:id="@+id/waterText"
+        android:visibility="gone"
+        style="@style/GreetingTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WATERTEXT"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/exercisesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/commonLabelsSmall"
+        android:backgroundTint="@color/cerise"
+        android:layout_below="@id/eatButton"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/exercises" />
+
+    <Button
+        android:id="@+id/medicineButton"
+        style="@style/commonLabelsSmall"
+        android:backgroundTint="@color/cerise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/exercisesButton"
+        android:layout_marginTop="30dp"
+        android:text="@string/medicine" />
+
+</RelativeLayout>

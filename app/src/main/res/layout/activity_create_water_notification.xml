@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/ActivityStyle"
+    tools:context=".CreateWaterNotificationActivity">
+
+    <ScrollView
+        android:id="@+id/skipTimesScrollContainer"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/clearSkipTimes">
+
+        <LinearLayout
+            android:id="@+id/skipTimesContainer"
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/repeatContainer"
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="1"
+            style="@style/commonLabelsSmall"
+            android:text="@string/ValueLabel" />
+
+        <EditText
+            android:id="@+id/ValueLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:hint="Значение"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:ems="10"
+            android:inputType="numberSigned"
+            android:text="" />
+
+        <Spinner
+            android:id="@+id/TimeSelectingSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            style="@style/GreetingTextStyle"
+
+            android:backgroundTint="@color/white"
+            app:layout_constraintStart_toEndOf="@+id/ValueLabel"
+            app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/repeatContainer"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        style="@style/commonLabels"
+        android:text="Время пропуска" />
+
+    <Button
+        android:id="@+id/clearSkipTimes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/cerise"
+        android:layout_below="@id/textView20"
+
+        android:text="@string/ClearButton" />
+
+    <ImageButton
+        android:id="@+id/ApplyWaterButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/button_ok_white_foreground"
+        android:layout_below="@id/skipTimesScrollContainer"
+        android:layout_centerHorizontal="true"
+        android:background="@color/transparent"/>
+
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/ActivityStyle"
+    tools:context=".NameRegistrationActivity">
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_centerHorizontal="true"
+        style="@style/RegistrationLabels"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/NameAsk"
+        android:layout_above="@id/NameField" />
+
+    <EditText
+        android:id="@+id/NameField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/RegistrationFields"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/NameTitle"
+        android:autofillHints="no"
+        android:textAlignment="center"
+        android:layout_centerVertical="true" />
+
+    <ImageButton
+        android:id="@+id/regContinue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="63dp"
+        android:background="@color/transparent"
+        app:srcCompat="@mipmap/button_next_white_foreground" />
+
+</RelativeLayout>

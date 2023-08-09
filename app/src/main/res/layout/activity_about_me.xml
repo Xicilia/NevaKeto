@@ -1,0 +1,132 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/ActivityStyle"
+    tools:context=".AboutMeActivity">
+
+
+    <ImageView
+        android:id="@+id/aboutMeIcon"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/profile_white_foreground" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/RegistrationLabels"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/aboutMeIcon"
+        android:text="@string/myProfile" />
+
+    <TextView
+        android:id="@+id/AboutNameField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView17"
+        android:layout_alignParentStart="true"
+        android:gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:text="NAME"
+        style="@style/commonLabels"/>
+
+    <TextView
+        android:id="@+id/AboutLastWeightField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/weightBlockLabel"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:text="WEIGHT"
+        style="@style/commonLabelsSmall"/>
+
+    <TextView
+        android:id="@+id/AboutWaistField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/WaistBlockLabel"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:text="WAIST"
+        style="@style/commonLabelsSmall"/>
+
+    <TextView
+        android:id="@+id/AboutHeightField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/AboutNameField"
+        android:layout_alignStart="@id/AboutNameField"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="HEIGHT"
+        style="@style/commonLabels"/>
+
+    <TextView
+        android:id="@+id/weightBlockLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/commonLabels"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/AboutHeightField"
+        android:gravity="center"
+        android:text="Вес" />
+
+    <TextView
+        android:id="@+id/byDayWeightLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BYDAY"
+        android:visibility="gone"
+        android:layout_below="@id/AboutLastWeightField"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        style="@style/commonLabelsSmall"/>
+
+    <TextView
+        android:id="@+id/fullWeightLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/AboutLastWeightField"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        style="@style/commonLabelsSmall"
+        android:text="FULL" />
+
+    <TextView
+        android:id="@+id/WaistBlockLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fullWeightLabel"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        style="@style/commonLabels"
+        android:text="Талия" />
+
+    <TextView
+        android:id="@+id/WaistFullField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/AboutWaistField"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        style="@style/commonLabelsSmall"
+        android:text="FULL" />
+
+    <Button
+        android:id="@+id/deleteProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/WaistFullField"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"
+        android:backgroundTint="@color/cerise"
+        android:fontFamily="@font/pragmatica_common"
+        android:text="Удалить профиль" />
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/ActivityStyle"
+    tools:context=".AboutMeActivity">
+
+    <TextView
+        android:id="@+id/sleepTimeField"
+        style="@style/commonLabels"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="SLEEPTIME"
+        android:layout_centerVertical="true"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/commonLabels"
+        android:gravity="center"
+        android:layout_above="@id/sleepTimeField"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/SleepTime" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/sleepEnable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sleepTimeField"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        style="@style/commonLabels"
+        android:text="@string/isEnabled" />
+
+</RelativeLayout>

@@ -1,0 +1,103 @@
+<resources>
+    <string name="app_name">HealthCare</string>
+    <string name="NameAsk">Давайте начнем!</string>
+    <string name="NameTitle">Как вас зовут?</string>
+    <string name="greetingText">Greetings</string>
+    <string name="RegistrationOK">Продолжить</string>
+    <string name="ClearButton">Очистить</string>
+    <string name="HeightRegistrationLabel">Ваш рост</string>
+    <string name="HeightRegistrationGreetings">Так держать!</string>
+    <string name="WeightRegistrationGreetings">Последний штрих</string>
+    <string name="WeightRegistrationLabel">Ваш текущий вес</string>
+    <string name="LastWeightLabel">Вес:</string>
+    <string name="LastWaistLabel">Талия:</string>
+    <string name="AboutMeButton">Профиль</string>
+    <string name="AboutName">Имя:</string>
+    <string name="AboutHeight">Рост:</string>
+    <string name="AboutLastWeight">Последний вес:</string>
+    <string name="BackButton">Назад</string>
+    <string name="SetWeightButton">Зафиксировать взвешивание</string>
+    <string name="ToWeightHistory">История взвешивания</string>
+    <string name="Value">Значение</string>
+    <string name="Date">Дата</string>
+
+    <string name="myProfile">Мой профиль</string>
+
+    <string name="ChannelName">MainChannel</string>
+    <string name="drinkWater">Вода</string>
+    <string name="RememberAfter">Напоминать через</string>
+    <string name="WaterNotifNumber">Время</string>
+
+    <string name="ValueLabel">Повторять</string>
+    <string name="ValueLabelEnd">Раз</string>
+    <string name="ValueAnother">Число</string>
+    <string name="Apply">Принять</string>
+    <string name="ClearWaterNotif">Убрать текущее напоминание о воде</string>
+    <string name="notifications">Уведомления</string>
+    <string name="eat">Приемы пищи</string>
+
+    <string-array name="TimeSelect">
+        <item>Час</item>
+        <item>Мин</item>
+    </string-array>
+    <string name="title_activity_eat">EatActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="newEat">Новый прием пищи</string>
+    <string name="EatName">Название</string>
+    <string name="delete">Удалить</string>
+    <string name="timeSelect">Выбрать новое время</string>
+    <string name="eatAt">Время</string>
+
+    <string name="unnamedEat">Безымянный прием пищи</string>
+    <string name="standartEatDesc">Пора кушать!</string>
+
+    <string name="enabled">Включен</string>
+    <string name="eatDescription">Описание</string>
+    <string name="waistGreeting">Ваш текущий размер талии</string>
+    <string name="waistHint">Размер талии, см</string>
+    <string name="toWaist">Зафиксировать размер талии</string>
+    <string name="inputs">Замеры</string>
+    <string name="toWaistHistory">История замеров</string>
+    <string name="sleep">Сон</string>
+    <string name="SleepTime">Время сна</string>
+
+    <string name="isEnabled">Включен</string>
+    <string name="isEnabled2">Включено</string>
+
+    <string name="exercises">Упражнения</string>
+    <string name="medicine">Витамины</string>
+
+    <string name="ExerciseName">Название упражнения</string>
+    <string name="ExerciseDescription">Описание упражнения</string>
+    <string name="ExerciseAt">Упражнение в</string>
+    <string name="EmptyTime">Время</string>
+
+    <string name="Control">Управление</string>
+
+    <string name="PN">Понедельник</string>
+    <string name="VT">Вторник</string>
+    <string name="SR">Среда</string>
+    <string name="CT">Четверг</string>
+    <string name="PT">Пятница</string>
+    <string name="SB">Суббота</string>
+    <string name="VS">Воскресенье</string>
+
+    <string name="Active">Активно</string>
+
+    <string name="medicineName">Название витаминов</string>
+    <string name="medicineDescription">Описание витаминов</string>
+
+    <string name="Add">Добавить</string>
+    <string name="Change">Изменить</string>
+
+    <string name="medicineDelete">Удалить витамины</string>
+
+    <string name="currentValue">CURRENT VALUE</string>
+</resources>

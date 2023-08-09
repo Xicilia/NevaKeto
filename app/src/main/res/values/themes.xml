@@ -1,0 +1,64 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.NevaKeto" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/LightGreen</item>
+        <item name="colorPrimaryVariant">@color/LighterGreen</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/cerise</item>
+        <item name="colorSecondaryVariant">@color/cerisedark</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/salemdark</item>
+        <!-- Customize your theme here. -->
+    </style>
+    
+    <style name="ActivityStyle">
+        <item name="android:background">@color/salem</item>
+        <item name="android:statusBarColor">@color/salem</item>
+        <item name="colorPrimaryDark">@color/salemdark</item>
+        <item name="colorPrimary">@color/salem</item>
+        <item name="android:navigationBarColor">@color/salemdark</item>
+    </style>
+
+    <style name="RegistrationLabels">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">35sp</item>
+        <item name="android:fontFamily">@font/pragmatica_normal</item>
+    </style>
+
+    <style name="RegistrationFields">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@font/pragmatica_common</item>
+    </style>
+
+    <style name="commonLabels">
+        <item name="android:fontFamily">@font/pragmatica_common</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">25sp</item>
+    </style>
+
+    <style name="commonLabelsSmall">
+        <item name="android:fontFamily">@font/pragmatica_common</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="GreetingTextStyle" parent="@style/TextAppearance.AppCompat">
+        <!--<item name="color">@color/white</item> -->
+        <item name="android:textColor">@color/white</item>
+        <!-- <item name="android:textSize">20sp</item> -->
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="Theme.NevaKeto.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.NevaKeto.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.NevaKeto.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>
